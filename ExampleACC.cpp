@@ -283,8 +283,8 @@ void sendDriverCtrl( int & sendSocket, const double & simTime, const unsigned in
     // let's go for a 2s distance
     double tgtDist = ownSpeed * 2.0;
   
-    if ( tgtDist < 15.0 )   // minimum  distance to keep
-        tgtDist = 15.0;
+    if ( tgtDist < 20.0 )   // minimum  distance to keep
+        tgtDist = 20.0;
         
     accelTgtDist = ( mNearestObject.base.pos.x - tgtDist ) / 10.0;    
   }
